@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(54, 59, 59);
+}
+
+header {
+  display: flex;
+  background-image: url(./images/couverture.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+
+  transition: 5s;
+  animation-name: anim-header;
+  animation-direction: alternate-reverse;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+}
+
+.slide {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+
+  color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide h1 {
+  font-family: "Vampiro one";
+  font-size: 5em;
+}
+
+@keyframes anim-header {
+  0% {
+    background-image: url(./images/banière1.jpg);
+  }
+
+  20% {
+    background-image: url(./images/baniere\ 3.jpg);
+  }
+
+  40% {
+    background-image: url(./images/couverture.jpg);
+  }
+
+  60% {
+    background-image: url(./images/baniere6.jpg);
+  }
+
+  80% {
+    background-image: url(./images/baniere7.jpg);
+  }
+
+  100% {
+    background-image: url(./images/baniere8.jpg);
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  height: 50px;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  background-color: whitesmoke;
+  color: rgb(85, 83, 83);
+  padding: 30px 0px;
+}
+
+.article {
+  width: 100%;
+  padding: 0px 50px;
+  text-align: justify;
+}
+aside {
+  width: 25%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+  font-style: italic;
+  color: #29627e;
+}
+
+aside > p {
+  margin: 0.5rem;
+}
+
+.galerie {
+  width: 35%;
+
+  height: 700px;
+  float: left;
+  background-position: center;
+  background-size: cover;
+
+  transition: 5s;
+  animation-name: anim-galerie;
+  animation-direction: alternate-reverse;
+  animation-duration: 60s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+  box-shadow: 30px 30px 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes anim-galerie {
+  0% {
+    background-image: url(./images/1.jpg);
+  }
+
+  10% {
+    background-image: url(./images/2.jpg);
+  }
+
+  20% {
+    background-image: url(./images/3.jpg);
+  }
+
+  30% {
+    background-image: url(./images/4.jpg);
+  }
+
+  40% {
+    background-image: url(./images/5.jpg);
+  }
+
+  50% {
+    background-image: url(./images/6.jpg);
+  }
+
+  60% {
+    background-image: url(./images/7.jpg);
+  }
+
+  70% {
+    background-image: url(./images/8.jpg);
+  }
+
+  80% {
+    background-image: url(./images/9.jpg);
+  }
+
+  90% {
+    background-image: url(./images/10.jpg);
+  }
+
+  100% {
+    background-image: url(./images/11.jpg);
+  }
+}
+
+.menu-photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+:root {
+  --clr-neutral-900: hsl(207, 19%, 9%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-accent-400: hsl(142 90% 61%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.card1 {
+  background-image: url(./images/bel.jpg);
+  background-size: cover;
+  background-position: center;
+
+  color: var(--clr-neutral-100);
+
+  padding: 5rem 0 0;
+  max-width: 27ch;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card2 {
+  background-image: url(./images/peincil\ drawings1.jpg);
+  background-size: cover;
+  background-position: center;
+
+  color: var(--clr-neutral-100);
+
+  padding: 5rem 0 0;
+  max-width: 27ch;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card3 {
+  background-image: url(./images/Zdzisław\ Beksiński1.jpg);
+  background-size: cover;
+  background-position: center;
+
+  color: var(--clr-neutral-100);
+
+  padding: 5rem 0 0;
+  max-width: 27ch;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card4 {
+  background-image: url(./images/digit4.jpg);
+  background-size: cover;
+  background-position: center;
+
+  color: var(--clr-neutral-100);
+
+  padding: 5rem 0 0;
+  max-width: 27ch;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card5 {
+  background-image: url(./images/creative.jpg);
+  background-size: cover;
+  background-position: center;
+
+  color: var(--clr-neutral-100);
+
+  padding: 5rem 0 0;
+  max-width: 27ch;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card {
+  transition: transform 500ms ease;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: scale(1.3);
+}
+
+.card-content {
+  --padding: 1rem;
+  padding: var(--padding);
+  /* background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hls(20 0% 0% / 0.3) 20%,
+    hls(0 0% 0% / 1)  */
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.7399334733893557) 24%,
+    rgba(0, 0, 0, 0.4318102240896359) 78%,
+    rgba(0, 0, 0, 0.022846638655462215) 95%
+  );
+
+  transform: translateY(65%);
+  transition: transform 500ms ease;
+}
+
+.card:hover .card-content,
+.card:focus-within .card-content {
+  transform: translateY(0);
+  transition-delay: 500ms;
+}
+
+.card:focus-within .card-content {
+  transition-duration: 0ms;
+}
+
+.card-content > *:not(.card-title) {
+  opacity: 0;
+  transition: opacity 500ms linear;
+}
+
+.card:hover .card-content > *:not(.card-title) {
+  opacity: 1;
+  transition-delay: 900ms;
+}
+
+.card-title {
+  position: relative;
+  width: max-content;
+}
+
+.card-title::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  left: calc(var(--padding) * -1);
+  bottom: -2px;
+  bottom: 0;
+  width: calc(100% + var(--padding));
+  background: var(--clr-accent-400);
+
+  transform: scaleX(0);
+  transform-origin: left;
+
+  transition: transform 500ms ease;
+}
+
+.card:hover .card-title::after {
+  transform: scaleX(1);
+}
+
+.card-body {
+  color: rgb(255 255 255 / 0.85);
+  text-align: justify;
+}
+
+.button {
+  cursor: pointer;
+  display: inline;
+  text-decoration: none;
+  color: var(--clr-neutral-900);
+  background-color: var(--clr-accent-400);
+  padding: 0.5em 1.25em;
+  border-radius: 0.25em;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--clr-neutral-100);
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #fff;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+form .far {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+form input {
+  width: 100%;
+}
