@@ -40,8 +40,9 @@ header {
   justify-content: center;
 }
 .slide h1 {
-  font-family: "Vampiro one";
-  font-size: 5em;
+  /* font-family: "Vampiro one"; */
+  font-family: "polya regular";
+  font-size: 8em;
 }
 
 @keyframes anim-header {
